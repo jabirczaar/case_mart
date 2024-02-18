@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li><a href="#users">Users</a></li>
+                <li><a href="#orders">Orders</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="users">
+                <h3>Users</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userTableBody">
+                        <!-- User data will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="orders">
+                <h3>Orders in Cart</h3>
+                <ul id="orderList">
+                    <!-- Order data will be dynamically inserted here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
